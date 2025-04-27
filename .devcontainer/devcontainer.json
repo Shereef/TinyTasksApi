@@ -1,0 +1,21 @@
+{
+  "name": "TinyTasksApi Dev Container",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "tinytasksapi",
+  "workspaceFolder": "/app",
+  "forwardPorts": [80],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-docker",
+        "ms-dotnettools.csdevkit"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "dotnet restore",
+  "remoteUser": "root"
+}
