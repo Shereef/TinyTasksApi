@@ -17,7 +17,7 @@ POST {{TinyTasksApi_HostAddress}}/tasks
 Content-Type: application/json
 
 {
-  "title": "New Task",
+  "title": "Testing the API",
   "isCompleted": false
 }
 
@@ -33,7 +33,7 @@ PUT {{TinyTasksApi_HostAddress}}/tasks/1
 Content-Type: application/json
 
 {
-  "title": "Updated Task",
+  "title": "Testing the API - Updated",
   "isCompleted": true
 }
 
