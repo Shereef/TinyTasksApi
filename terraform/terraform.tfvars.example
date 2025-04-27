@@ -1,0 +1,18 @@
+# Example values for Terraform variables
+# Copy this file to terraform.tfvars and fill in your actual values
+
+# AWS Account information - required
+aws_account_id = "123456789012"  # Replace with your AWS account ID
+
+# Application settings - adjust as needed
+app_name = "shereef-tinytasksapi"
+environment = "dev"
+
+# ECR settings
+ecr_repository_name = "shereef-tinytasksapi"
+ecr_image_tag = "latest"
+
+# Network settings
+aws_region = "us-east-1"
+vpc_cidr = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
