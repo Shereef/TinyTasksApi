@@ -1,0 +1,50 @@
+@TinyTasksApi_HostAddress = http://localhost
+
+### Get all tasks
+GET {{TinyTasksApi_HostAddress}}/tasks
+Accept: application/json
+
+###
+
+### Get a task by ID
+GET {{TinyTasksApi_HostAddress}}/tasks/1
+Accept: application/json
+
+###
+
+### Create a new task
+POST {{TinyTasksApi_HostAddress}}/tasks
+Content-Type: application/json
+
+{
+  "title": "New Task",
+  "isCompleted": false
+}
+
+###
+
+### Delete a task by ID
+DELETE {{TinyTasksApi_HostAddress}}/tasks/1
+
+###
+
+### Update a task by ID
+PUT {{TinyTasksApi_HostAddress}}/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Updated Task",
+  "isCompleted": true
+}
+
+###
+
+### Partially update a task by ID
+PATCH {{TinyTasksApi_HostAddress}}/tasks/1
+Content-Type: application/json
+
+{
+  "isCompleted": true
+}
+
+###
