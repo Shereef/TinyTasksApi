@@ -4,6 +4,7 @@
 .terraform/
 .terraform.lock.hcl
 terraform/terraform.tfvars
+*.tfstate.lock.info
 
 # Node modules (if applicable)
 node_modules/
