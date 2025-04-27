@@ -1,6 +1,7 @@
 # Dockerfile.dev
 FROM mcr.microsoft.com/dotnet/sdk:9.0
-
+# Install SSH client (for ssh-add, etc) and GPG client (for commit signing)
+RUN apt-get update && apt-get install -y openssh-client gnupg
 WORKDIR /app
 
 # Copy everything for development

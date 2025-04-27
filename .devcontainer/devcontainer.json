@@ -17,5 +17,8 @@
     }
   },
   "postCreateCommand": "dotnet restore",
-  "remoteUser": "root"
+  "remoteUser": "root",
+  "mounts": [
+    "source=${env:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached"
+  ]
 }

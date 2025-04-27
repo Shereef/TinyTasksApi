@@ -1,11 +1,14 @@
 services:
   tinytasksapi:
+    environment:
+      - SSH_AUTH_SOCK=/ssh-agent
+    volumes:
+      - $SSH_AUTH_SOCK:/ssh-agent
+      - .:/app
     image: tinytasksapi-dev
     build:
       context: .
       dockerfile: Dockerfile.dev
     ports:
       - "80:80"
-    volumes:
-      - .:/app
     command: ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:80"]
