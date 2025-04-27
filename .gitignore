@@ -1,0 +1,48 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Node modules (if applicable)
+node_modules/
+
+# Logs
+*.log
+
+# Compiled files
+*.class
+*.dll
+*.exe
+*.so
+*.dylib
+*.pyc
+*.pyo
+*.out
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/bin/
+/obj/
+/*.deps.json
+/*.runtimeconfig.json
+
+# Docker
+*.env
+docker-compose.override.yml
+
+# Sensitive files
+*.key
+*.pem
+*.pfx
